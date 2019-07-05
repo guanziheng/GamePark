@@ -1,2 +1,2 @@
 # game
-[预览](www.baidu.com)
+[预览](http://www.baidu.com)
