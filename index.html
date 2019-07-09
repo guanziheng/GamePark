@@ -1,10 +1,148 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>游戏乐园</title>
-	</head>
-	<body>
-		这是个游戏乐园
-	</body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>游戏小站</title>
+    <style type="text/css">
+    	body{
+    		margin: 0;
+    		padding: 0;
+    		font-family: "微软雅黑";
+    	}
+    	#title{
+    		position: fixed;
+    		width: 100%;
+    		height: 60px;
+    		background: #f66;
+    		font-size: 32px;
+    		line-height: 60px;
+    		color: #fff;
+    		text-align: center;
+    		/*font-family: fzmwt;*/
+    		top: 0;
+    	}
+    	#foot{
+    		position: fixed;
+    		width: 100%;
+    		height: 25px;
+    		background: #f66;
+    		font-size: 15px;
+    		line-height: 25px;
+    		color: #fff;
+    		text-align: center;
+    		bottom: 0;
+    	}
+    	#game_list{
+    		position: absolute;
+    		top: 60px;
+    		width: 100%;
+    		overflow-y: scroll;
+    	}
+    	.game_box{
+    		width: 100%;
+    		height: auto;
+    		min-height: 120px;
+    		/*background: #6f6;*/
+    		margin-bottom: 5px;
+    		border-bottom: 1px solid #f66;
+    		overflow: hidden;
+    	}
+    	.game_img{
+    		position: absolute;
+    		width: 100px;
+    		height: 100px;
+    		margin: 10px;
+    	}
+    	.game_title{
+    		position: absolute;
+    		font-size: 30px;
+    		/*font-family: fzmwt;*/
+    		margin-left: 120px;
+    		margin-top: 10px;
+    		color: #f66;
+    	}
+    	.game_jianjie{
+    		/*position: absolute;*/
+    		float: left;
+    		margin-left: 120px;
+    		margin-top: 52px;
+    		color: #f66;
+    		font-size: 14px;
+    	}
+    </style>
+</head>
+<body>
+	<div id="title">
+		游戏小站
+	</div>
+	<div id="game_list">
+		<div class="game_box" id="game_1">
+			<img class="game_img" src="img/snake.png"/>
+			<div class="game_title">贪吃蛇</div>
+			<div class="game_jianjie">
+				这是一款内容丰富的贪吃蛇游戏，在传统的游戏基础上，加入了18种有特殊能力的果实，更加入了强大的技能系统和果实变异规则，更多好玩的内容等你来发现~
+			</div>
+		</div>
+		<div class="game_box" id="game_2">
+			<img class="game_img" src="img/color_cube.png"/>
+			<div class="game_title">色差方块</div>
+			<div class="game_jianjie">
+				在众多方块中找出与众不同的那一块，小小的游戏，却是对辨色能力的一大考验，如果对你自己的眼睛有信心的话，就来挑战吧！
+			</div>
+		</div>
+		<div class="game_box" id="game_3">
+			<img class="game_img" src="img/lianliankan.png"/>
+			<div class="game_title">连连看</div>
+			<div class="game_jianjie">
+				一款经典的休闲小游戏，玩起来却一点儿也不休闲，在这里，手速变得尤为重要，要来试试吗？
+			</div>
+		</div>
+		<div class="game_box" id="game_4">
+			<img class="game_img" src="img/color_cube.png"/>
+			<div class="game_title">六角拼拼</div>
+			<div class="game_jianjie">
+				开发中，敬请期待…
+			</div>
+		</div>
+		<div class="game_box" id="game_5">
+			<img class="game_img" src="img/color_cube.png"/>
+			<div class="game_title">小人造桥</div>
+			<div class="game_jianjie">
+				开发中，敬请期待…
+			</div>
+		</div>
+		<div class="game_box" id="game_3">
+			<img class="game_img" src="img/color_cube.png"/>
+			<div class="game_title">跳一跳</div>
+			<div class="game_jianjie">
+				开发中，敬请期待…
+			</div>
+		</div>
+	</div>
+	<div id="foot">
+		Copyright © 2017 All Rights Reserved.
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+<script type="text/javascript">
+	if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+	    //移动端
+	} else {
+	    //pc端
+	}
+	
+	$("#game_list").css("height",window.innerHeight-85);
+	//$("body").css("font-family","fzmwt");
+	//alert($(".game_jianjie").height());
+	$("#game_1").click(function(){
+		window.open("http://www.guanziheng.com/snake/index.html")
+	})
+	$("#game_2").click(function(){
+		window.open("http://www.guanziheng.com/color_cube/index.html")
+	})
+	$("#game_3").click(function(){
+		window.open("http://www.guanziheng.com/lianliankan/index.html")
+	})
+</script>
 </html>
